@@ -1,3 +1,4 @@
+
 function combine (n1: number | string, n2:number|string){
 
     if(typeof n1 === 'number' && typeof n2 === 'number')
