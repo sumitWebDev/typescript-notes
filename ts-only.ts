@@ -1,14 +1,11 @@
-const arr1 = [1,2,3,4,5]
+//Class name should start with Capital Letter
+class PersonalDetails{
+  name: string; //this defines that class will have a name of type string
 
-//Array Destructuring
-const [a1,b1] = arr1
-console.log(a1)
-
-//Object Destructuring
-const obj1 = {
-  name: 'Sumit',
-  age: 40
+  constructor(n:string){
+    this.name = n
+  }
 }
-const{name,age} = obj1
-console.log(name)
 
+var details = new PersonalDetails('Sumit')
+console.log(details)
