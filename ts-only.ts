@@ -1,9 +1,9 @@
 //Class name should start with Capital Letter
 class PersonalDetails{
   // name: string; //this defines that class will have a name of type string
-  private employees:string[] = [];
+  protected employees:string[] = [];
 
-  constructor( public id:number,public name:string){
+  constructor( private id:number,public name:string){
 
   }
   addEmployee(employee:string){
