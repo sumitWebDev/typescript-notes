@@ -1,13 +1,15 @@
-interface Person{
-    name : string,
+interface Named {
+    readonly name:string
+}
+
+interface Greeting {
     greet() : void
   }
 
   class PersonDetails implements Person {
-    name:string;
     age:number = 30;
 
-    constructor(name:string){
+    constructor(public name:string){
       this.name = name
     }
 
@@ -17,4 +19,5 @@ interface Person{
   }
 
   var person1 = new PersonDetails('Sumit')
+  //person1.name = 'Sss'
   person1.greet()
