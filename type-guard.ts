@@ -31,7 +31,8 @@ function printEmployee (emp:UnknownEmployee){
 
 printEmployee({name:'Sumit',privileges:['Admin']})
 
-//Type guard with instance of
+//Type guard with instance of operator
+
 class Car{
   drive(){
     console.log('Driving Car')
